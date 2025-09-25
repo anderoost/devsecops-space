@@ -1,0 +1,92 @@
+:root {
+  --eko-green: #00ffae;
+  --eko-blue: #00cfff;
+  --eko-purple: #7c3aed;
+  --eko-dark: #0a0a0a;
+  --eko-light: #f2f2f2;
+}
+
+.container {
+  max-width: 400px;
+  margin: 3rem auto;
+  background: var(--eko-dark);
+  border-radius: 1rem;
+  box-shadow: 0 0 24px 0 var(--eko-purple);
+  padding: 2rem 1.5rem;
+}
+
+h1 {
+  color: var(--eko-green);
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--eko-blue);
+  border-radius: 0.5rem;
+  background: var(--eko-light);
+  color: var(--eko-dark);
+  font-size: 1rem;
+}
+
+.todo-btn {
+  background: var(--eko-green);
+  color: var(--eko-dark);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.todo-btn:hover {
+  background: var(--eko-blue);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--eko-purple);
+  color: var(--eko-light);
+  margin-bottom: 0.7rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.todo-list li.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: var(--eko-green);
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: var(--eko-blue);
+}
